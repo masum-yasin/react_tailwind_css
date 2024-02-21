@@ -1,0 +1,14 @@
+.awesometitle{
+    margin-top:90px;
+}
+.card-group{
+    margin-top:90px;
+}
+.card img{
+    width:80px;
+}
+.awesome-card:hover{
+    background-color:darkcyan;
+    color: white;
+    
+}

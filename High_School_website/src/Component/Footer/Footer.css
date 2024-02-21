@@ -1,0 +1,48 @@
+.footer-background-color{
+    background-color: rgb(13, 13, 72);
+    height:620px;
+}
+.footer-section{
+  
+    margin-top:70px;
+    display:flex;
+    gap:8px;
+    
+}
+.footer-heading{
+   padding-top: 80px;
+   margin-left: 80px;
+   color: white;
+  
+}
+.footer-form input{
+background-color:yellow;
+color: white;
+border: none;
+border-bottom: 1px solid gray;
+padding: 10px;
+}
+.footer-img img{
+  padding-left:40px;
+  width: 300px;
+  margin-top:60px;
+}
+.footer-button{
+  width:380px;
+  padding:20px;
+  font-size:22px;
+  background-color: orange;
+color: white;
+}
+.footer-button:hover{
+  background-color:white;
+  color:rgb(6, 6, 55);
+}
+.footer-examin-img{
+  display: flex;
+  gap:110px;
+  margin-top:10px;
+}
+
+
+   
