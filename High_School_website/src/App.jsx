@@ -6,12 +6,13 @@ import Footer from './Component/Footer/Footer'
 
 function App() {
   // const [count, setCount] = useState(0)
+  const noHeaderFooter = location.pathname.includes('/login') || location.pathname.includes('/signup')
 
   return (
     <>
-      <Header></Header>
+     { noHeaderFooter || <Header></Header>}
       <Outlet></Outlet>
-      <Footer></Footer>
+     {noHeaderFooter || <Footer></Footer>}
      
     </>
   )

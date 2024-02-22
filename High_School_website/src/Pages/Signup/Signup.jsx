@@ -3,9 +3,9 @@ import signup from '../../../public/img/login/signup.jpg'
 
 const Signup = () => {
     return (
-        <div>
-<div className="row container m-lg-5 p-lg-3">
-<form className=' col-lg-7'>
+        <div style={{marginTop:"100px"}}>
+<div className="row container p-lg-3" >
+<form className='col-lg-7'>
 <div className="form-group row">
 <label htmlFor="inputName" className="col-sm-1 col-form-label">Name</label>
 <div className="col-sm-8">
@@ -26,12 +26,12 @@ const Signup = () => {
 </div>
 </div>
 <div className="form-group row mt-3">
-<label htmlFor="inputCaptcha" className="col-sm-1 col-form-label">Captcha</label>
+<label htmlFor="inputPassword" className="col-sm-1 col-form-label">Password</label>
 <div className="col-sm-8">
-<input type="text" className="form-control p-3" id="inputCaptcha" placeholder="type the catpcha above"/>
-<button className='btn btn-success mt-2' style={{width:"410px"}}>Validate</button>
+<input type="password" className="form-control p-3" id="inputPassword" placeholder="Enter Your Confirm Password" />
 </div>
 </div>
+
 <div className="form-group row mt-3">
 <label htmlFor="inputsubmit" className="col-sm-1 col-form-label">SUBMIT</label>
 <div className="col-lg-8">
