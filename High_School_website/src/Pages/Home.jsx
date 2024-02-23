@@ -7,6 +7,7 @@ import Serive from '../Component/Service/Serive';
 import ExpertTrainer from '../Component/ExpertTrainer/ExpertTrainer';
 import UpcommingEvent from '../Component/UpcommingEvent/UpcommingEvent';
 import Client from '../Component/Client/Client';
+import Secret from '../Component/Secret/Secret';
 
 const Home = () => {
    
@@ -19,6 +20,7 @@ const Home = () => {
             <ExpertTrainer></ExpertTrainer>
             <UpcommingEvent></UpcommingEvent>
             <Client></Client>
+            <Secret></Secret>
         
             
         </div>

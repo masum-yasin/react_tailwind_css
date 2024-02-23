@@ -11,6 +11,11 @@ import Contacts from './Pages/Contacts.jsx'
 import Blogs from './Pages/Blogs.jsx'
 import Login from './Pages/Login/Login.jsx'
 import Signup from './Pages/Signup/Signup.jsx'
+import AuthProvider from './Providers/AuthProvider.jsx'
+import PrivateRoute from './Component/PrivateRoute.jsx'
+import Secret from './Component/Secret/Secret.jsx'
+
+
 const router = createBrowserRouter([
       {
         path:'/',
@@ -48,6 +53,10 @@ const router = createBrowserRouter([
           {
             path:'/signup',
             element:<Signup></Signup>
+          },
+          {
+            path:'/secret',
+            element:<PrivateRoute><Secret></Secret></PrivateRoute>
           }
         ]
       }
@@ -55,6 +64,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+  <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+  </AuthProvider>
   </React.StrictMode>,
 )
